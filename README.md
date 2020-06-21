@@ -1,5 +1,5 @@
 
-# Content
+# gRPC Implemenation in GO
 
 - Hello Service
 

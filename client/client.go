@@ -3,9 +3,9 @@ package main
 import (
 	"context"
 	"fmt"
+	api "github.com/grpc-golang/api/generated"
 	"google.golang.org/grpc"
 	"io"
-	api "jobets/gprc-golang/api/generated"
 	"log"
 	"time"
 )

@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
+	api "github.com/grpc-golang/api/generated"
 	"io"
-	api "jobets/gprc-golang/api/generated"
 	"log"
 	"net"
 	"strconv"
@@ -66,7 +66,7 @@ func (*server) SayHelloServerStreaming(req *api.HelloRequest, stream api.HelloSe
 }
 
 func (*server) SayHelloBidirectionalStreaming(stream api.HelloService_SayHelloBidirectionalStreamingServer) error {
-	fmt.Printf("SayHelloBidirectionalStreaming function was invoked with \n")
+	fmt.Printf("SayHelloBidirectionalStreaming function was invoked \n")
 
 	for {
 		req, err := stream.Recv()
